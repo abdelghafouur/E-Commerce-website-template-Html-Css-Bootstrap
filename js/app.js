@@ -106,3 +106,5 @@ AddToCart.forEach((button) => {
     localStorage.setItem("cart", JSON.stringify(cart));
   });
 });
+
+
