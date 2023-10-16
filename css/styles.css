@@ -384,7 +384,7 @@ ul {
   object-fit: cover;
 }
 .auth_content {
-  width: 50%;
+  width: 48%;
 }
 
 @media only screen and (max-width: 800px) {
