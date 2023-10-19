@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Home - E-Commerce Website</title>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style_nav.css" />
+    <link rel="stylesheet" href="./css/ContactUs.css" />
+
+    <!-- bootstrap links-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- nav web -->
+    <nav class="nav">
+      <div class="container nav_container">
+        <a href="#" class="nav_logo">SOUHAILSHOUP</a>
+        <ul class="nav_list">
+          <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
+          <li class="nav_item"><a href="/" class="nav_link">Category</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">FAQ's</a></li>
+        </ul>
+        <div class="nav_items">
+          <form action="#" class="nav_form">
+            <input
+              type="text"
+              class="nav_input"
+              placeholder="search here...."
+            />
+            <img src="./image/search.png" alt="" class="nav_search" />
+          </form>
+          <li class="nav_item">
+            <a href="/sign-up.html" class="nav_link">Login</a>
+          </li>
+          <li class="nav_item">
+            <a href="/sign-up.html" class="nav_link">Register</a>
+          </li>
+          <a>
+            <img src="./image/heart.png" alt="" class="nav_heart" />
+          </a>
+          <a href="/cart.html">
+            <img src="./image/cart.png" alt="" class="nav_cart" />
+          </a>
+        </div>
+        <span class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+      </div>
+    </nav>
+
+    <!-- nav mobile -->
+    <nav class="mobile_nav mobile_nav_hide">
+      <ul class="mobile_nav_list">
+        <li class="mobile_nav_item">
+          <a href="/" class="mobile_nav_link">Home</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">About</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">Contact</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="/sign-up.html" class="mobile_nav_link">Sign Up</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="/cart.html" class="mobile_nav_link">Cart</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- nav section New Product Public -->
+    <section class="section">
+      <div class="container services_container">
+        <div class="service">
+          <img src="./image/icons/service-2.png" alt="" class="service_img" />
+          <h3 class="service_title">24/7 SUPPORT</h3>
+          <p class="service_p">How we can help you ?</p>
+        </div>
+        <div class="service">
+          <img
+            src="./image/icons/pngwing.com.png"
+            alt=""
+            class="service_img"
+            width="70px"
+            height="70px"
+          />
+          <h3 class="service_title">Email</h3>
+          <p class="service_p">contact@gmail.com</p>
+        </div>
+        <div class="service">
+          <svg
+            width="70"
+            height="70"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#000000"
+              d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1c0 9.39 7.61 17 17 17c.55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1c-1.24 0-2.45-.2-3.57-.57a.84.84 0 0 0-.31-.05c-.26 0-.51.1-.71.29l-2.2 2.2a15.149 15.149 0 0 1-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1z"
+            />
+          </svg>
+          <h3 class="service_title">Phone</h3>
+          <p class="service_p">+212 69342342</p>
+        </div>
+      </div>
+    </section>
+    <main>
+      <div class="form">
+        <h1>please full all the form !</h1>
+        <table>
+          <tr>
+            <td>
+              <span>Email</span>
+            </td>
+            <td>
+             
+              
+              <input type="text" name="email" id="email" required>
+              <label for="email">email</label>
+            </td>
+          </tr>
+          <tr>
+            <td><span>Name</span></td>
+            <td>
+             
+              <input type="text" name="name" id="name" required="" />
+              <label for="name">Name</label>
+            </td>
+          </tr>
+          <tr>
+            <td><span>Objet</span></td>
+            <td>
+             
+              <input type="text" name="Objet" id="Objet" required="" />
+              <label for="Objet">Objet</label>
+            </td>
+          </tr>
+          <tr>
+            <td> <span>Message</span></td>
+            <td>
+              <textarea
+                name="message"
+                id="message"
+                cols="40"
+                rows="10"
+                required=""
+              ></textarea>
+            
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <center>
+             
+                <button type="submit">
+                       SEND
+                   <span></span>
+                </button></center>
+            </td>
+          </tr>
+        </table>
+       
+      </div>
+      <div class="Inormation">
+        <h1>Information</h1>
+        <table>
+          <tr>
+            <td>Phone :</td>
+            <td>
+              <label for="phone">+212 69342342</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Adress :</td>
+            <td>
+              <label for="adress">Marrakech , Morocco</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Email :</td>
+            <td>
+              <label for="email"> contact@gmail.com </label>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer_container">
+        <div class="footer_item">
+          <a href="#" class="footer_logo">SOUHAILSHOUP</a>
+          <div class="footer_p">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Exercitationem fuga harum voluptate?
+          </div>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Support</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Marrakech, Morocco</li>
+            <li class="li footer_list_item">abdouuu@gmail.com</li>
+            <li class="li footer_list_item">+46 123 456 78</li>
+            <li class="li footer_list_item">+46 72 345 67</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Menu</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Home</li>
+            <li class="li footer_list_item">Categories</li>
+            <li class="li footer_list_item">Login</li>
+            <li class="li footer_list_item">Register</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Support</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Privacy policy</li>
+            <li class="li footer_list_item">Terms of use</li>
+            <li class="li footer_list_item">FAQ's</li>
+            <li class="li footer_list_item">Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container footer_bottom_container">
+          <p class="footer_copy">
+            Copyright SOUHAILSHOUP 2023. All right reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  
+
+    <!-- Link JS  -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
