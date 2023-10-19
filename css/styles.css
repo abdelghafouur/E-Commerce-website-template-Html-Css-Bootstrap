@@ -9,11 +9,6 @@
   --color-green: #00d656;
 }
 
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
 html {
   font-size: 10px;
   /* 1 rem 10px */
@@ -21,6 +16,9 @@ html {
 body {
   font-family: var(--font-main);
   font-size: 1.6rem;
+  padding: px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;

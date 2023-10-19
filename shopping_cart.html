@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Aroma Shop - Cart</title>
+    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/styleShopping_cart.css">
+    <link rel="stylesheet" href="css/style_nav.css">
+
+</head>
+
+<body>
+    <!-- nav web -->
+    <nav class="nav">
+        <div class="container nav_container">
+          <a href="#" class="nav_logo">SOUHAILSHOUP</a>
+          <ul class="nav_list">
+            <li class="nav_item"><a href="./index.html" class="nav_link">Home</a></li>
+            <li class="nav_item"><a href="./categories.html" class="nav_link">Category</a></li>
+            <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+            <li class="nav_item"><a href="#" class="nav_link">FAQ's</a></li>
+          </ul>
+          <div class="nav_items">
+            <form action="#" class="nav_form">
+              <input
+                type="text"
+                class="nav_input"
+                placeholder="search here...." />
+              <img src="./image/search.png" alt="" class="nav_search" />
+            </form>
+            <li class="nav_item">
+              <a href="./sign-in.html" class="nav_link">Login</a>
+            </li>
+            <li class="nav_item">
+              <a href="./sign-up.html" class="nav_link">Register</a>
+            </li>
+            <a>
+              <img src="./image/heart.png" alt="" class="nav_heart" />
+            </a>
+            <a href="/cart.html">
+              <img src="./image/cart.png" alt="" class="nav_cart" />
+            </a>
+          </div>
+          <span class="hamburger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </span>
+        </div>
+      </nav>
+      <!-- nav mobile -->
+      <nav class="mobile_nav mobile_nav_hide">
+        <ul class="mobile_nav_list">
+          <li class="mobile_nav_item">
+            <a href="/" class="mobile_nav_link">Home</a>
+          </li>
+          <li class="mobile_nav_item">
+            <a href="#" class="mobile_nav_link">About</a>
+          </li>
+          <li class="mobile_nav_item">
+            <a href="#" class="mobile_nav_link">Contact</a>
+          </li>
+          <li class="mobile_nav_item">
+            <a href="/sign-up.html" class="mobile_nav_link">Sign Up</a>
+          </li>
+          <li class="mobile_nav_item">
+            <a href="/cart.html" class="mobile_nav_link">Cart</a>
+          </li>
+        </ul>
+      </nav>
+    <!--================Cart Area =================-->
+    <section class="cart_area">
+        <div class="container">
+            <div class="cart_inner">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <img src="image/cart/cart1.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <p>Minimalistic shop for multipurpose use</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$360.00</h5>
+                                </td>
+                                <td>
+                                    <div class="product_count">
+                                        <input type="text" name="qty" id="sst1" maxlength="12" value="1"
+                                            title="Quantity:" class="input-text qty">
+                                        <button
+                                            onclick="var result = document.getElementById('sst1'); var sst = result.value; if (!isNaN(sst)) result.value++; return false;"
+                                            class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
+                                        <button
+                                            onclick="var result = document.getElementById('sst1'); var sst = result.value; if (!isNaN(sst) && sst > 1) result.value--; return false;"
+                                            class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$720.00</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <img src="image/cart/cart2.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <p>Minimalistic shop for multipurpose use</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$360.00</h5>
+                                </td>
+                                <td>
+                                    <div class="product_count">
+                                        <input type="text" name="qty" id="sst2" maxlength="12" value="1" title="Quantity:" class="input-text qty">
+                                        <button
+                                            onclick="var result = document.getElementById('sst2'); var sst = result.value; if (!isNaN(sst)) result.value++; return false;"
+                                            class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
+                                        <button
+                                            onclick="var result = document.getElementById('sst2'); var sst = result.value; if (!isNaN(sst) && sst > 1) result.value--; return false;"
+                                            class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$720.00</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class= "d-flex">
+                                            <img src="image/cart/cart3.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <p>Minimalistic shop for multipurpose use</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$360.00</h5>
+                                </td>
+                                <td>
+                                    <div class="product_count">
+                                        <input type="text" name="qty" id="sst3" maxlength="12" value="1"
+                                            title="Quantity:" class="input-text qty">
+                                        <button
+                                            onclick="var result = document.getElementById('sst3'); var sst = result.value; if (!isNaN(sst)) result.value++; return false;"
+                                            class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
+                                        <button
+                                            onclick="var result = document.getElementById('sst3'); var sst = result.value; if (!isNaN(sst) && sst > 1) result.value--; return false;"
+                                            class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$720.00</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+    
+                                </td>
+                                <td>
+    
+                                </td>
+                                <td>
+                                    <h5>Subtotal</h5>
+                                </td>
+                                <td>
+                                    <h5>$2160.00</h5>
+                                </td>
+                            </tr>
+                            <tr class="shipping_area">
+                                <td class="d-none d-md-block">
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    <h5>Your Information Shipping</h5>
+                                </td>
+                                <td>
+                                    <div class="shipping_box">
+                                        <br><br>
+                                        <input type="text" placeholder="Your City">
+                                        <input type="text" placeholder="Your Address">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="out_button_area">
+                                <td class="d-none-l">
+    
+                                </td>
+                                <td class="">
+    
+                                </td>
+                                <td>
+    
+                                </td>
+                                <td>
+                                    <div class="checkout_btn_inner d-flex align-items-center">
+                                        <a class="gray_btn" href="#">Delete All</a>
+                                        <a class="primary-btn ml-2" href="#">Proceed to checkout</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Cart Area =================-->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer_container">
+          <div class="footer_item">
+            <a href="#" class="footer_logo">SOUHAILSHOUP</a>
+            <div class="footer_p">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Exercitationem fuga harum voluptate?
+            </div>
+          </div>
+          <div class="footer_item">
+            <h3 class="footer_item_titl">Support</h3>
+            <ul class="footer_list">
+              <li class="li footer_list_item">Marrakech, Morocco</li>
+              <li class="li footer_list_item">abdouuu@gmail.com</li>
+              <li class="li footer_list_item">+46 123 456 78</li>
+              <li class="li footer_list_item">+46 72 345 67</li>
+            </ul>
+          </div>
+          <div class="footer_item">
+            <h3 class="footer_item_titl">Menu</h3>
+            <ul class="footer_list">
+              <li class="li footer_list_item">Home</li>
+              <li class="li footer_list_item">Categories</li>
+              <li class="li footer_list_item">Login</li>
+              <li class="li footer_list_item">Register</li>
+            </ul>
+          </div>
+          <div class="footer_item">
+            <h3 class="footer_item_titl">Support</h3>
+            <ul class="footer_list">
+              <li class="li footer_list_item">Privacy policy</li>
+              <li class="li footer_list_item">Terms of use</li>
+              <li class="li footer_list_item">FAQ's</li>
+              <li class="li footer_list_item">Contact</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="container footer_bottom_container">
+            <p class="footer_copy">
+              Copyright SOUHAILSHOUP 2023. All right reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+</html>
