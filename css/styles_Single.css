@@ -76,12 +76,24 @@
     margin-top: 25px
 }
 
-.s_product_text .card_area .primary-btn {
+.s_product_text .card_area .primary-btn,.btn-submit-coment {
     line-height: 38px;
     padding: 0px 38px;
     text-transform: uppercase;
     margin-right: 10px;
-    border-radius: 5px
+    background-color: #384aeb;
+    color: white;
+    /* border-radius: 5px; */
+    border-radius: 30px;
+    border: none;
+}
+.pic_commentaire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 .s_product_text .card_area .icon_btn {
