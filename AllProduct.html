@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aroma Shop - Category</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/nice-select/nice-select.css">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="css/style_nav.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <!-- nav web -->
+    <nav class="nav">
+        <div class="container nav_container">
+        <a href="#" class="nav_logo">SOUHAILSHOUP</a>
+        <ul class="nav_list">
+            <li class="nav_item"><a href="./index.html" class="nav_link">Home</a></li>
+            <li class="nav_item"><a href="./categories.html" class="nav_link">Category</a></li>
+            <li class="nav_item"><a href="./contactUs.html" class="nav_link">Contact</a></li>
+            <li class="nav_item"><a href="#" class="nav_link">FAQ's</a></li>
+        </ul>
+        <div class="nav_items">
+            <form action="#" class="nav_form">
+            <input
+                type="text"
+                class="nav_input"
+                placeholder="search here...." />
+            <img src="./image/search.png" alt="" class="nav_search" />
+            </form>
+            <li class="nav_item">
+            <a href="./sign-in.html" class="nav_link">Login</a>
+            </li>
+            <li class="nav_item">
+            <a href="./sign-up.html" class="nav_link">Register</a>
+            </li>
+            <a href="./favoraite_cat.html">
+            <img src="./image/heart.png" alt="" class="nav_heart" />
+            </a>
+            <a href="./shopping_cart.html">
+            <img src="./image/cart.png" alt="" class="nav_cart" />
+            </a>
+        </div>
+        <span class="hamburger">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6">
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </span>
+        </div>
+    </nav>
+    <!-- nav mobile -->
+    <nav class="mobile_nav mobile_nav_hide">
+        <ul class="mobile_nav_list">
+        <li class="mobile_nav_item">
+            <a href="./index.html" class="mobile_nav_link">Home</a>
+        </li>
+        <li class="mobile_nav_item">
+            <a href="./categories.html" class="mobile_nav_link">Category</a>
+        </li>
+        <li class="mobile_nav_item">
+            <a href="./contactUs.html" class="mobile_nav_link">Contact</a>
+        </li>
+        <li class="mobile_nav_item">
+            <a href="./sign-in.html" class="mobile_nav_link">FAQ's</a>
+        </li>
+        <li class="mobile_nav_item">
+            <a href="./sign-up.html" class="mobile_nav_link">Login</a>
+        </li>
+        <li class="mobile_nav_item">
+            <a href="./sign-in.html" class="mobile_nav_link">Register</a>
+        </li>
+        <a href="./favoraite_cat.html">
+            <img src="./image/heart.png" alt="" class="nav_heart" />
+        </a>
+        <a href="./shopping_cart.html">
+            <img src="./image/cart.png" alt="" class="nav_cart" />
+        </a>
+        </ul>
+    </nav>
+	<!-- ================ category section start ================= -->		  
+    <section class="section-margin--small mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 col-md-5">
+          <div class="sidebar-categories">
+            <div class="head">Browse Categories</div>
+            <ul class="main-categories">
+              <li class="common-filter">
+                <form action="#">
+                  <ul>
+                    <li class="filter-list"><input class="pixel-radio" type="radio" id="men" name="brand"><label for="men">Men<span> (3600)</span></label></li>
+                    <li class="filter-list"><input class="pixel-radio" type="radio" id="women" name="brand"><label for="women">Women<span> (3600)</span></label></li>
+                    <li class="filter-list"><input class="pixel-radio" type="radio" id="accessories" name="brand"><label for="accessories">Accessories<span> (3600)</span></label></li>
+                    <li class="filter-list"><input class="pixel-radio" type="radio" id="footwear" name="brand"><label for="footwear">Footwear<span> (3600)</span></label></li>
+                    <li class="filter-list"><input class="pixel-radio" type="radio" id="bayItem" name="brand"><label for="bayItem">Bay item<span> (3600)</span></label></li>
+                    <li class="filter-list"><input class="pixel-radio" type="radio" id="electronics" name="brand"><label for="electronics">Electronics<span> (3600)</span></label></li>
+                    <li class="filter-list"><input class="pixel-radio" type="radio" id="food" name="brand"><label for="food">Food<span> (3600)</span></label></li>
+                  </ul>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-filter">
+            <div class="top-filter-head">Product Filters</div>
+            <div class="common-filter">
+              <div class="head">Brands</div>
+              <form action="#">
+                <ul>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="apple" name="brand"><label for="apple">Apple<span>(29)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="asus" name="brand"><label for="asus">Asus<span>(29)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="gionee" name="brand"><label for="gionee">Gionee<span>(19)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="micromax" name="brand"><label for="micromax">Micromax<span>(19)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">Samsung<span>(19)</span></label></li>
+                </ul>
+              </form>
+            </div>
+            <div class="common-filter">
+              <div class="head">Color</div>
+              <form action="#">
+                <ul>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="black" name="color"><label for="black">Black<span>(29)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="balckleather" name="color"><label for="balckleather">Black
+                      Leather<span>(29)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="blackred" name="color"><label for="blackred">Black
+                      with red<span>(19)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="gold" name="color"><label for="gold">Gold<span>(19)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="spacegrey" name="color"><label for="spacegrey">Spacegrey<span>(19)</span></label></li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-8 col-md-7">
+          <!-- Start Filter Bar -->
+          <div class="filter-bar d-flex flex-wrap align-items-center">
+            <div class="sorting">
+              <select>
+                <option value="1">Default sorting</option>
+                <option value="1">Default sorting</option>
+                <option value="1">Default sorting</option>
+              </select>
+            </div>
+            <div class="sorting mr-auto">
+              <select>
+                <option value="1">Show 12</option>
+                <option value="1">Show 12</option>
+                <option value="1">Show 12</option>
+              </select>
+            </div>
+          </div>
+          <!-- End Filter Bar -->
+          <!-- Start Best Seller -->
+          <section class="lattest-product-area pb-40 category-list">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product1.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                      <li><button><i class="fa-regular fa-heart"></i></button></li>
+                      <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Accessories</p>
+                    <h4 class="card-product__title"><a href="#">Quartz Belt Watch</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product2.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Beauty</p>
+                    <h4 class="card-product__title"><a href="#">Women Freshwash</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product3.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Decor</p>
+                    <h4 class="card-product__title"><a href="#">Room Flash Light</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product4.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Decor</p>
+                    <h4 class="card-product__title"><a href="#">Room Flash Light</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product5.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Accessories</p>
+                    <h4 class="card-product__title"><a href="#">Man Office Bag</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product6.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Kids Toy</p>
+                    <h4 class="card-product__title"><a href="#">Charging Car</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product7.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Accessories</p>
+                    <h4 class="card-product__title"><a href="#">Blutooth Speaker</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product8.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Kids Toy</p>
+                    <h4 class="card-product__title"><a href="#">Charging Car</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product1.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                      <li><button><i class="fa-regular fa-heart"></i></button></li>
+                      <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Accessories</p>
+                    <h4 class="card-product__title"><a href="#">Quartz Belt Watch</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product2.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Beauty</p>
+                    <h4 class="card-product__title"><a href="#">Women Freshwash</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product3.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Decor</p>
+                    <h4 class="card-product__title"><a href="#">Room Flash Light</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product1.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Accessories</p>
+                    <h4 class="card-product__title"><a href="#">Quartz Belt Watch</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product4.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Decor</p>
+                    <h4 class="card-product__title"><a href="#">Room Flash Light</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product5.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Accessories</p>
+                    <h4 class="card-product__title"><a href="#">Man Office Bag</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product6.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Kids Toy</p>
+                    <h4 class="card-product__title"><a href="#">Charging Car</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product7.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Accessories</p>
+                    <h4 class="card-product__title"><a href="#">Blutooth Speaker</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product8.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                        <li><button><i class="fa-regular fa-heart"></i></button></li>
+                        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Kids Toy</p>
+                    <h4 class="card-product__title"><a href="#">Charging Car</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="image/product/product1.png" alt="">
+                    <ul class="card-product__imgOverlay">
+                      <li><button><i class="fa-regular fa-heart"></i></button></li>
+                      <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Accessories</p>
+                    <h4 class="card-product__title"><a href="#">Quartz Belt Watch</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End Best Seller -->
+        </div>
+      </div>
+    </div>
+    </section>
+	<!-- ================ category section end ================= -->		  
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer_container">
+          <div class="footer_item">
+            <a href="#" class="footer_logo">SOUHAILSHOUP</a>
+            <div class="footer_p">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Exercitationem fuga harum voluptate?
+            </div>
+          </div>
+          <div class="footer_item">
+            <h3 class="footer_item_titl">Support</h3>
+            <ul class="footer_list">
+              <li class="li footer_list_item">Marrakech, Morocco</li>
+              <li class="li footer_list_item">abdouuu@gmail.com</li>
+              <li class="li footer_list_item">+46 123 456 78</li>
+              <li class="li footer_list_item">+46 72 345 67</li>
+            </ul>
+          </div>
+          <div class="footer_item">
+            <h3 class="footer_item_titl">Menu</h3>
+            <ul class="footer_list">
+              <li class="li footer_list_item">Home</li>
+              <li class="li footer_list_item">Categories</li>
+              <li class="li footer_list_item">Login</li>
+              <li class="li footer_list_item">Register</li>
+            </ul>
+          </div>
+          <div class="footer_item">
+            <h3 class="footer_item_titl">Support</h3>
+            <ul class="footer_list">
+              <li class="li footer_list_item">Privacy policy</li>
+              <li class="li footer_list_item">Terms of use</li>
+              <li class="li footer_list_item">FAQ's</li>
+              <li class="li footer_list_item">Contact</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="container footer_bottom_container">
+            <p class="footer_copy">
+              Copyright SOUHAILSHOUP 2023. All right reserved
+            </p>
+          </div>
+        </div>
+    </footer>
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="vendors/skrollr.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+    <script>  //------- Active Nice Select --------//
+        $('select').niceSelect(); </script>
+</body>
+</html>

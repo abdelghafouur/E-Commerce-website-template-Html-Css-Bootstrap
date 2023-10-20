@@ -56,10 +56,19 @@
     margin-bottom: 0px
 }
 
+.cart_inner .table tbody tr td .btn_add_cart {
+    height: 40px;
+    padding: 12px 30px;
+    line-height: 38px;
+    text-transform: capitalize;
+    background: #384aeb;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 500
+}
 .cart_inner .table tbody tr td .product_count {
     margin-bottom: 0px
 }
-
 .cart_inner .table tbody tr td .product_count input {
     width: 100px;
     padding-left: 30px;

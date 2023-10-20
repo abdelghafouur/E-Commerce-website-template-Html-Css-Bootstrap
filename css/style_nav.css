@@ -192,3 +192,10 @@ ul {
 .mobile_nav_hide {
   display: none;
 }
+.mobile_nav .nav_heart{
+  margin-left: 50px;
+}
+.mobile_nav .nav_cart{
+  margin-left: 10px;
+  margin-top: 10px;
+}
