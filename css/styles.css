@@ -16,7 +16,6 @@ html {
 body {
   font-family: var(--font-main);
   font-size: 1.6rem !important;
-  font-size: 1.6rem;
   padding: px;
   margin: 0px;
   box-sizing: border-box;
