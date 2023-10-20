@@ -107,6 +107,9 @@ ul {
     margin-top: 10rem;
     background-color: var(--colo-dark-1);
   }
+  .footer a{
+    color: white;
+  }
   .footer_container {
     width: 100%;
     display: grid;
