@@ -269,6 +269,7 @@
   z-index: 2;
   position: absolute;
   object-fit: cover;
+  height: 100%;
 }
 
 .profile-container18 {

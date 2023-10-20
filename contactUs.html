@@ -103,8 +103,6 @@
       </ul>
     </nav>
 
-
-  
     <div class="profile-contact">
       <div class="profile-container">
         <div class="profile-form">
@@ -112,21 +110,24 @@
           <span class="profile-text2 Lead">
             we so happy to hear from you, please fill the form below and our
           </span>
+          <span class="profile-text2 Lead msg"> </span>
           <form class="profile-form1" method="POST">
             <label class="profile-text3 Label">name</label>
             <input
               type="text"
               placeholder="name"
-              name="nom"
+              name="name"
+              id="name"
               class="profile-textinput Small input"
               required
             />
             <label class="profile-text3 Label">Email</label>
             <input
               type="text"
-              placeholder="votre email"
+              placeholder="Email"
               name="email"
               class="profile-textinput Small input"
+              id="email"
               required
             />
             <label class="profile-text4 Label"> Object </label>
@@ -136,6 +137,7 @@
               class="profile-textinput1 Small input"
               required
               name="objet"
+              id="object"
             />
             <label class="profile-text23 Label">Message</label>
             <textarea
@@ -143,6 +145,7 @@
               placeholder="I want to say..."
               class="profile-textarea textarea Small"
               name="message"
+              id="message"
               required
             ></textarea>
             <div>
@@ -153,7 +156,12 @@
             </div>
             <div class="profile-container10">
               <div class="profile-container11">
-                <input type="submit" value="envoyer" class="button-submit" />
+                <input
+                  type="submit"
+                  value="envoyer"
+                  class="button-submit"
+                  onclick="checkForm()"
+                />
               </div>
             </div>
           </form>
@@ -164,8 +172,8 @@
               <span> Contact </span>
               <span>Information</span>
             </h3>
-            <span class="profile-text27  small">
-             fill the form and we wall talk to you soon .
+            <span class="profile-text27 small">
+              fill the form and we wall talk to you soon .
             </span>
             <div class="profile-container13">
               <div class="profile-container14">
@@ -213,7 +221,15 @@
     </div>
 
     <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1720354.0824433083!2d-9.090375046965164!3d32.6310507120424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2ed2c13b8d7%3A0x5e5c26905533d3be!2sNike%20Store!5e0!3m2!1sen!2sma!4v1697800988031!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1720354.0824433083!2d-9.090375046965164!3d32.6310507120424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2ed2c13b8d7%3A0x5e5c26905533d3be!2sNike%20Store!5e0!3m2!1sen!2sma!4v1697800988031!5m2!1sen!2sma"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
 
     <!-- Footer -->
@@ -265,5 +281,50 @@
 
     <!-- Link JS  -->
     <script src="./js/app.js"></script>
+    <script type="text/javascript">
+      ScrollReveal().reveal(".profile-contact", {
+        duration: 1000,
+        origin: "top",
+        distance: "100px",
+      });
+      ScrollReveal().reveal(".profile-info", {
+        duration: 2000,
+        origin: "right",
+        distance: "100px",
+      });
+      ScrollReveal().reveal(".map", {
+        duration: 1000,
+        origin: "bottom",
+        distance: "100px",
+      });
+
+      function checkForm() {
+        event.preventDefault();
+        const name = document.querySelector("#name");
+        const email = document.querySelector("#email");
+
+        const object = document.querySelector("#object");
+        const message = document.querySelector("#message");
+        const msg = document.querySelector(".msg");
+        alert("hello wolrd");
+        if (
+          name.value.trim() == "" ||
+          email.value.trim() == "" ||
+          object.value.trim() == "" ||
+          message.value.trim() == ""
+        ) {
+          msg.innerHTML = `<div class="alert alert-danger" role="alert">
+ all the informatchion is obli!
+</div>`;
+        } else {
+          msg.innerHTML = `<div class="alert alert-success d-flex align-items-center" role="alert">
+  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+  <div>
+    message send corretly
+  </div>
+</div>`;
+        }
+      }
+    </script>
   </body>
 </html>
